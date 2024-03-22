@@ -16,7 +16,7 @@ while True:
 
     memory = psutil.virtual_memory()
     memory_avail = round(memory.available / 1024**3)
-    print(f"사용 가능한 메모리: {memory_avail}GB"), 1
+    print(f"사용 가능한 메모리: {memory_avail}GB")
 
     net = psutil.net_io_counters()
     curr_sent = net.bytes_sent/1024**2
